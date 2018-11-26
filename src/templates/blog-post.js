@@ -4,10 +4,10 @@ import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 
 import Bio from '../components/Bio';
-import Layout from '../components/Layout';
+import PostLayout from '../components/PostLayout';
 import { rhythm, scale } from '../utils/typography';
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends React.PureComponent {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
@@ -15,7 +15,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <PostLayout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -74,7 +74,7 @@ class BlogPostTemplate extends React.Component {
             }
           </li>
         </ul>
-      </Layout>
+      </PostLayout>
     );
   }
 }

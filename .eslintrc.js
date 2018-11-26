@@ -64,9 +64,9 @@ module.exports = {
     "react/prop-types": ["off"],
     "jsx-a11y/href-no-hash": ["off"],
     "jsx-a11y/img-has-alt": ["off"],
+    "object-curly-newline": ["off"],
     "jsx-a11y/label-has-for": ["warn"],
     "function-paren-newline": ["warn"],
-    "object-curly-newline": ["warn"],
     "jsx-a11y/anchor-is-valid": ["warn"],
     "react/jsx-curly-brace-presence": ["warn"],
     "jsx-a11y/click-events-have-key-events": ["warn"],
@@ -86,7 +86,7 @@ module.exports = {
     "max-len": [
       "error",
       {
-        "code": 120
+        "code": 150
       }
     ]
   }
