@@ -6,10 +6,6 @@ import Header from './header/Header';
 import '../styles.css';
 
 class Layout extends React.PureComponent {
-  defaultProps = {
-    wrapperStyle: true,
-  }
-
   render() {
     const { children } = this.props;
     // const rootPath = `${__PATH_PREFIX__}/`;

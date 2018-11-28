@@ -1,0 +1,33 @@
+
+.intro-banner {
+  background-image: url('../../assets/blog-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.intro-banner > h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+.intro-banner > h4 {
+  margin: 5px;
+}
+
+.intro-banner > h3 {
+  margin: 15px;
+}
+
+.profile-img {
+  max-width: 100px;
+}
+
+.category-link {
+  padding: 15px;
+  margin: 10px;
+  margin-top: 20px;
+  border: 0.5px solid white;
+  border-radius: 10px;
+}

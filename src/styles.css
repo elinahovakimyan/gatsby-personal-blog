@@ -22,13 +22,6 @@ pre > code {
   align-items: center;
 }
 
-.category-banner {
-  background-image: url('./assets/blog-banner.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: rgb(68, 132, 206);
 }

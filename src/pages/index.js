@@ -1,13 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-// import get from 'lodash/get';
 import Helmet from 'react-helmet';
 
 import { rhythm } from '../utils/typography';
-import { colors } from '../utils/colors';
 // import Bio from '../components/Bio';
 import PostGrid from '../components/PostGrid';
 import Layout from '../components/Layout';
+import IntroBanner from '../components/intro-banner/IntroBanner';
 
 class BlogIndex extends React.PureComponent {
   render() {
@@ -15,7 +14,6 @@ class BlogIndex extends React.PureComponent {
     const siteTitle = site.siteMetadata.title;
     const siteDescription = site.siteMetadata.description;
     const posts = allMarkdownRemark.edges;
-    const categories = ['JavaScript', 'React', 'Time Management', 'Productivity'];
 
     return (
       <Layout location={this.props.location} title={siteTitle} wrapperStyle={false}>
@@ -25,11 +23,7 @@ class BlogIndex extends React.PureComponent {
           title={siteTitle}
         />
 
-        <div className="category-banner">
-          {categories.map(category => (
-            <span style={{ color: colors.orange }}>{`#${category}`}</span>
-          ))}
-        </div>
+        <IntroBanner />
 
         <div
           className="homepage-content"
