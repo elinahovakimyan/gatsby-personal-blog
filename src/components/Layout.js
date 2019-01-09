@@ -7,12 +7,12 @@ import '../styles.css';
 
 class Layout extends React.PureComponent {
   render() {
-    const { children } = this.props;
+    const { children, location } = this.props;
     // const rootPath = `${__PATH_PREFIX__}/`;
 
     return (
       <div>
-        <Header />
+        <Header pathname={location.pathname} />
         <div style={{ paddingTop: 100 }}>
           {children}
         </div>

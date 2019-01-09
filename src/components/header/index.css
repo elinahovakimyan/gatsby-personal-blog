@@ -12,8 +12,19 @@ h3 {
 .header-first-layer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-logo {
+  width: 140px;
+  margin: 0;
+}
+
+.header-logo-wrap {
+  padding: 0;
+  text-decoration: none;
+  box-shadow: none;
 }
 
 .header-second-layer {
@@ -21,16 +32,12 @@ h3 {
   width: 100%;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid rgb(21, 72, 84);
 }
 
-.header-second-layer > span {
-  padding: 5px 25px;
-}
-
-.header-logo {
-  width: 30px;
-  height: 30px;
-  margin: 0;
+.header-second-layer > a {
+  padding: 3px 25px;
+  font-family: Montserrat,sans-serif;
 }
 
 .header-search-icon {
@@ -40,7 +47,8 @@ h3 {
 }
 
 .header-social-icon {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin: 0;
+  margin: 5px;
 }

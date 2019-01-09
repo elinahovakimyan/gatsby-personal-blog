@@ -5,7 +5,8 @@ import get from 'lodash/get';
 
 import Bio from '../components/Bio';
 import PostLayout from '../components/PostLayout';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
+import { colors } from '../utils/colors';
 
 class BlogPostTemplate extends React.PureComponent {
   render() {
@@ -21,17 +22,11 @@ class BlogPostTemplate extends React.PureComponent {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
+        <h1 style={{ color: colors.blue }}>{post.frontmatter.title}</h1>
+        <div style={{ color: colors.yellow }} className="post-subheader">
+          <p>{post.frontmatter.category}</p>
+          {/* <p>{post.frontmatter.date}</p> */}
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -54,7 +49,7 @@ class BlogPostTemplate extends React.PureComponent {
               previous
               && (
                 <Link to={previous.fields.slug} rel="prev">
-                ←
+                  ←
                   {' '}
                   {previous.frontmatter.title}
                 </Link>
@@ -68,7 +63,7 @@ class BlogPostTemplate extends React.PureComponent {
                 <Link to={next.fields.slug} rel="next">
                   {next.frontmatter.title}
                   {' '}
-→
+                  →
                 </Link>
               )
             }
@@ -95,6 +90,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        category
         date(formatString: "MMMM DD, YYYY")
       }
     }

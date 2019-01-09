@@ -1,6 +1,7 @@
 ---
 title: React 16 Lifecycles Explained
 date: "2015-05-01T22:12:03.284Z"
+category: 'Programming'
 ---
 
 ![Chinese Salty Egg](./salty_egg.jpg)

@@ -1,6 +1,7 @@
 ---
 title: 'Git commands cheat sheet: basic commands for software engineers'
 date: "2015-05-06T23:46:37.121Z"
+category: 'Programming'
 ---
 
 > When I just started using git, I was frustrated and the “git” world seemed to be a nightmare for me. This became even more scary when I started to work with a team when the real power of git comes in, which is controlling all the different versions of the same code and sharing it with each member. Then I decided to write this post and explain it in the simplest way. So, let’s rock it together :))

@@ -1,0 +1,9 @@
+---
+title: 'React-Navigation: Tips & Tricks'
+date: "2015-05-01T22:12:03.284Z"
+category: 'Programming'
+---
+
+![Chinese Salty Egg](./salty_egg.jpg)
+
+React would not be so powerful without the advantage called ‘life-cycles.’ This article will be exploring React life-cycles used (considering final updates of React 16) and guide you how to make use of them and make your react project more sophisticated and astonishing.

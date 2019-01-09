@@ -7,7 +7,7 @@ import '../styles.css';
 
 class PostLayout extends React.PureComponent {
   render() {
-    const { children } = this.props;
+    const { children, location } = this.props;
     // const rootPath = `${__PATH_PREFIX__}/`;
     const styles = {
       marginLeft: 'auto',
@@ -17,14 +17,12 @@ class PostLayout extends React.PureComponent {
       paddingTop: 100,
     };
 
-    return (
-      <div>
-        <Header />
-        <div style={styles}>
-          {children}
-        </div>
-      </div>
-    );
+    return [
+      <Header key="header" pathname={location.pathname} />,
+      <div key="children" style={styles}>
+        {children}
+      </div>,
+    ];
   }
 }
 

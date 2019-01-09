@@ -1,6 +1,7 @@
 ---
 title: 5 anomalies of JavaScript, aka edge cases
 date: "2015-05-06T23:46:37.121Z"
+category: 'Programming'
 ---
 
 Hello! Today we are going to discuss 10 anomalies of JavaScript which are the outputs that you would never expect normally. These cases are called edge cases for being too far away from core logic. Let’s get started!

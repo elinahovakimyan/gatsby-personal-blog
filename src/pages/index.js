@@ -14,6 +14,7 @@ class BlogIndex extends React.PureComponent {
     const siteTitle = site.siteMetadata.title;
     const siteDescription = site.siteMetadata.description;
     const posts = allMarkdownRemark.edges;
+    // const categories = ['JavaScript', 'React', 'Time Management', 'Productivity'];
 
     return (
       <Layout location={this.props.location} title={siteTitle} wrapperStyle={false}>
@@ -24,6 +25,17 @@ class BlogIndex extends React.PureComponent {
         />
 
         <IntroBanner />
+
+        {/* <div>
+          <h3>Choose a category</h3>
+          <div className="category-banner">
+            {categories.map(category => (
+              <Link to={`/posts?category=${category}`} key={category} className="category-link">
+                <span>{`#${category}`}</span>
+              </Link>
+            ))}
+          </div>
+        </div> */}
 
         <div
           className="homepage-content"
@@ -64,6 +76,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            category
           }
         }
       }

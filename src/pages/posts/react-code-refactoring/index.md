@@ -1,6 +1,7 @@
 ---
 title: Code Refactoring Tips for React Projects
 date: "2015-04-08T22:40:32.169Z"
+category: 'Programming'
 ---
 
 > “Indeed, the ratio of time spent reading versus writing is well over 10 to 1. 

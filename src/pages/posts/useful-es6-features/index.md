@@ -1,6 +1,7 @@
 ---
 title: Extremely useful ES6 features that we don’t use much 😱
 date: "2015-04-08T22:40:32.169Z"
+category: 'Programming'
 ---
 
 ES6 brought many cool things to JS developers’ lives. But not everything is being used and talked about. Thus, I decided to bring your attention to those very useful and fresh features. Let’s start.

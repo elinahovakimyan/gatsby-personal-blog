@@ -18,7 +18,7 @@ class Bio extends React.PureComponent {
       >
         <img
           src={profilePic}
-          alt="Kyle Mathews"
+          alt="Elina Hovakimyan"
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
@@ -31,10 +31,10 @@ class Bio extends React.PureComponent {
           {' '}
           <strong>Elina Hovakimyan</strong>
           {' '}
-          who lives and works in Yerevan, Armenia building useful things.
+          who lives and works in Armenia, building useful things - projects, startups, businesses.
           {' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
+          <a href="https://twitter.com/HovakimyanElina">
+            You should follow her on Twitter
           </a>
         </p>
       </div>

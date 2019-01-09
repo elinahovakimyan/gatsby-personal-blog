@@ -1,6 +1,7 @@
 ---
 title: How to manage everything in 8 easy steps
 date: "2015-05-06T23:46:37.121Z"
+category: 'Productivity'
 ---
 
 > “Work smarter, not harder.” — Allen F. Morgenstern

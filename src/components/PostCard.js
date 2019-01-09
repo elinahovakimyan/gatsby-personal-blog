@@ -23,7 +23,7 @@ const styles = {
   },
 };
 
-const PostCard = ({ title, excerpt, url, date, classes }) => (
+const PostCard = ({ title, excerpt, url, category, classes }) => (
   <Card>
     <Link to={url}>
       <CardActionArea>
@@ -31,8 +31,8 @@ const PostCard = ({ title, excerpt, url, date, classes }) => (
           <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
             {title}
           </Typography>
-          <Typography component="p" className={classes.date}>
-            {date}
+          <Typography component="p" className={classes.category}>
+            {category}
           </Typography>
           <Typography component="p" className={classes.excerpt}>
             {excerpt}
@@ -41,12 +41,14 @@ const PostCard = ({ title, excerpt, url, date, classes }) => (
       </CardActionArea>
     </Link>
     <CardActions>
-      <Button size="small" color="primary">
+      {/* <Button size="small" color="">
         Share
-      </Button>
-      <Button size="small" color="primary">
-        Learn More
-      </Button>
+      </Button> */}
+      <Link to={url}>
+        <Button size="small" color="">
+          Read More
+        </Button>
+      </Link>
     </CardActions>
   </Card>
 );

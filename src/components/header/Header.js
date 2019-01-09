@@ -1,31 +1,37 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 import { Link } from 'gatsby';
 
 import { colors } from '../../utils/colors';
 // import { rhythm } from '../../utils/typography';
 import './index.css';
 
+const HeaderLogo = require('../../assets/logo-header.png');
+const TwitterIcon = require('../../assets/twitter-dark.png');
+const InIcon = require('../../assets/in-dark.png');
+const GithubIcon = require('../../assets/github-dark.png');
+
 class Header extends React.PureComponent {
   render() {
+    const { pathname } = this.props;
+    const activeStyle = { backgroundColor: colors.blue, color: colors.white };
+    const casualStyle = { backgroundColor: colors.white, color: colors.blue };
+
+    console.log('this.props :', this.props);
     return (
-      <div
-        className="header-container"
-      >
+      <div className="header-container">
         <div
           className="header-first-layer"
           style={{
             backgroundColor: colors.blue,
-            paddingLeft: '25%',
-            paddingRight: '25%',
           }}
         >
-          <Link to="/">
-            <h3>Logo</h3>
+          <Link className="header-logo-wrap" to="/">
+            <img alt="Digio Reader Logo" className="header-logo" src={HeaderLogo} />
           </Link>
 
           <div>
-            <TextField
+            {/* <TextField
               id="input-with-icon-textfield"
               className="search-input"
               placeholder="Search..."
@@ -38,35 +44,52 @@ class Header extends React.PureComponent {
                   />
                 ),
               }}
-            />
+            /> */}
 
-            <img
-              alt="Search in Elina Hovakimyan Blog"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Black_Instagram_icon.svg/2000px-Black_Instagram_icon.svg.png"
-              className="header-social-icon"
-            />
+            <a href="https://twitter.com/HovakimyanElina" rel="noopener noreferrer" target="_blank">
+              <img
+                alt="Elina Hovakimyan Twitter"
+                src={TwitterIcon}
+                className="header-social-icon"
+              />
+            </a>
 
-            <img
-              alt="Search in Elina Hovakimyan Blog"
-              src="https://www.clipartmax.com/png/small/304-3041366_linkedin-logotype-button-free-icon-linkedin-logo-b-w.png"
-              className="header-social-icon"
-            />
+            <a href="https://www.linkedin.com/in/elina-hovakimyan/" rel="noopener noreferrer" target="_blank">
+              <img
+                alt="Elina Hovakimyan Linkedin"
+                src={InIcon}
+                className="header-social-icon"
+              />
+            </a>
 
-            <img
-              alt="Search in Elina Hovakimyan Blog"
-              src="https://www.clipartmax.com/png/small/98-987640_follow-him-on-black-twitter-logo-transparent-background.png"
-              className="header-social-icon"
-            />
+            <a href="https://github.com/elinahovakimyan/" rel="noopener noreferrer" target="_blank">
+              <img
+                alt="Elina Hovakimyan's Github link"
+                src={GithubIcon}
+                className="header-social-icon"
+              />
+            </a>
           </div>
         </div>
 
-        <div className="header-second-layer" style={{ backgroundColor: colors.yellow }}>
-          <span style={{ color: colors.blue }}>Blog</span>
-          <span style={{ color: colors.blue }}>Tutorials</span>
-          <span style={{ backgroundColor: colors.blue, color: colors.gray }}>Self-growth</span>
-          <span style={{ color: colors.blue }}>About</span>
-        </div>
+        <div className="header-second-layer" style={{ backgroundColor: colors.white }}>
+          <Link to="/" style={(pathname.includes('blog') || pathname.includes('posts') || pathname === '/') ? activeStyle : casualStyle}>
+            <span>Blog</span>
+          </Link>
 
+          <Link to="/ebooks" style={pathname.includes('ebooks') ? activeStyle : casualStyle}>
+            <span>E-books</span>
+          </Link>
+
+          {/* <Link to="/tutorials" style={pathname.includes('tutorials') ? activeStyle : casualStyle}>
+            <span>Tutorials</span>
+          </Link> */}
+
+          <Link to="/about" style={pathname.includes('about') ? activeStyle : casualStyle}>
+            <span>About</span>
+          </Link>
+
+        </div>
       </div>
     );
   }

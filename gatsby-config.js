@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Digio Reader',
+    author: 'Elina Hovakimyan',
+    description: 'Articles on digital world and productivity.',
+    siteUrl: 'http://digioreader.com',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -48,13 +48,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Elina Hovakimyan\'s Blog',
-        short_name: 'GatsbyJS',
+        name: 'Digio Reader',
+        short_name: 'DigioReader',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#4484CE',
         display: 'minimal-ui',
-        icon: 'src/assets/gatsby-icon.png',
+        icon: 'src/assets/logo-white.png',
       },
     },
     'gatsby-plugin-offline',
