@@ -79,6 +79,7 @@ module.exports = {
     "react/jsx-max-props-per-line": ["warn"],
     "react/no-typos": ["warn"],
     "jsx-a11y/iframe-has-title": ["warn"],
+    "jsx-a11y/accessible-emoji": ["off"],
     "react/no-will-update-set-state": ["warn"],
     "jsx-a11y/no-noninteractive-element-interactions": ["warn"],
     "comma-dangle": ["warn"],

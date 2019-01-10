@@ -1,11 +1,8 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "digio-reader",
+  "description": "DigioReader Blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
-  },
+  "author": "Elina Hovakimyan <elinahovakimyan@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.5.1",
     "babel-eslint": "^10.0.1",
@@ -51,16 +48,15 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/elinahovakimyan/gatsby-personal-blog",
   "keywords": [
-    "gatsby"
+    "digioreader",
+    "blog",
+    "tech",
+    "productivity"
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "dev": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -68,6 +64,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
+    "now-build": "npm run build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "eslint": "eslint . --ext .js",
     "eslint:fix": "eslint . --ext .js --fix",

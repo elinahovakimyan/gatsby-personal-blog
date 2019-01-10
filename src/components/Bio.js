@@ -33,7 +33,7 @@ class Bio extends React.PureComponent {
           {' '}
           who lives and works in Armenia, building useful things - projects, startups, businesses.
           {' '}
-          <a href="https://twitter.com/HovakimyanElina">
+          <a target="_blank" href="https://twitter.com/HovakimyanElina">
             You should follow her on Twitter
           </a>
         </p>

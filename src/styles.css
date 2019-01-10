@@ -10,9 +10,9 @@ code {
 }
 
 pre {
-  background-color: #333131;
+  background-color: #444c4b;
   border-radius: 5px;
-  color: beige;
+  color: #e3e8e8;
   padding: 5px;
 }
 
@@ -40,7 +40,7 @@ blockquote {
 }
 
 a {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .post-subheader {
@@ -48,4 +48,27 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.about-wrapper {
+  padding: 10px 10%;
+  text-align: center;
+}
+
+.lists-wrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+  .lists-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    text-align: center;
+  }
 }
